@@ -1,0 +1,6 @@
+C:\Users\Navya>java -jar F:\ASDM\jenkins.war
+
+
+open as localhost 8080
+usename:admin
+password:aa9c3968da3c4f9b816fb3c06018cf64
