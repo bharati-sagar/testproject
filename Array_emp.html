@@ -1,0 +1,42 @@
+<!--2)Accept and store names of 6 employees into array and dispaly in sorted order of names javascript-->
+<html>
+<head>
+	<script>
+		var employees=[];
+		function addemp()
+		{
+			var e=document.getElementById("nm").value;
+			employees.push(e);
+			console.log("new added employees:"+e);
+			console.log(employees);
+			console.log("Sorted Employees :");
+			console.log(employees.sort());
+			console.log("Reversed Employees:")
+			employees.reverse()
+			console.log(employees);
+		}
+		
+		function initialize()
+		{
+			document.getElementById("btn1").addEventListener("click",addemp);
+		}
+		
+		function deleteemp(){
+		demp=prompt("Enter Employee Name to Delete:");
+		for(var i=0;i<employees.length;i++){
+			if(employees[i]==demp){
+				employees.splice(i,1);
+				break;
+			}
+		}
+		console.log("Deleted Employee Name:"+demp);
+		console.log(employees);
+	}
+	</script>
+</head>
+<body onload="initialize()" >
+	Employee Name: <input type="text" name="nm" id="nm">
+	<button type="button" name="btn" id="btn1">Add Name</button>
+	<button type="button" bame="btn" id="btn2" onclick="deleteemp()">Delete Name</button>
+</body>
+</html>
